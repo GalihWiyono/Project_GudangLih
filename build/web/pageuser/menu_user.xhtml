@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>User Menu</title>
+    </h:head>
+    <h:body>
+        <ui:decorate template="sidebar_user.xhtml">
+            <ui:define name="body">
+                
+                <div class="container-fluid">
+                        <h1 class="mt-4">Dashboard</h1>
+                        <br/>
+                <div class="row">
+                            <div class="col-xl-4 col-sm-8">
+                                <div class="card bg-primary text-white mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title text-white">Transaction Finished</h4>
+                                        <div class="d-inline-block">
+                                            <h:form>
+                                                <h:outputText class="text-white" value="#{tblSeller.product_seller}" style="font-size: 1.65em ;font-weight: bolder"/>
+                                            </h:form>
+                                            <p class="text-white mb-0">Jan - Oct 2020</p>
+                                        </div>
+                                        <span class="float-right display-4"><i class="fa fa-shopping-cart"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-8">
+                                <div class="card bg-warning text-white mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title text-white">Total Product</h4>
+                                        <div class="d-inline-block">
+                                            <h:form>
+                                                <h:outputText class="text-white" value="#{tblSeller.total_barang}" style="font-size: 1.65em ;font-weight: bolder"/>
+                                            </h:form>
+                                            <p class="text-white mb-0">Jan - Oct 2020</p>
+                                        </div>
+                                        <span class="float-right display-4"><i class="fa fa-chart-bar"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-8">
+                                <div class="card bg-danger text-white mb-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title text-white">Last Transaction</h4>
+                                        <div class="d-inline-block">
+                                            <h:form>
+                                                <h:outputText class="text-white" value="#{tblTransaksi.tgl}" style="font-size: 1.65em ;font-weight: bolder"/>
+                                            </h:form>
+                                            <p class="text-white mb-0">Jan - Oct 2020</p>
+                                        </div>
+                                        <span class="float-right display-4"><i class="fa fa-calendar"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+               
+            </ui:define>
+        </ui:decorate>
+    </h:body>
+</html>
+

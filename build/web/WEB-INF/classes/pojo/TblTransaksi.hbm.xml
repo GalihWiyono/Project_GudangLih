@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18-Oct-2020 20:19:14 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.TblTransaksi" table="tbl_transaksi" catalog="gudanginlah_v2" optimistic-lock="version">
+        <id name="idTransaksi" type="string">
+            <column name="id_transaksi" length="6" />
+            <generator class="assigned" />
+        </id>
+        <property name="idBarang" type="string">
+            <column name="id_barang" length="6" not-null="true" />
+        </property>
+        <property name="namaBarang" type="string">
+            <column name="nama_barang" length="20" not-null="true" />
+        </property>
+        <property name="namaPenerima" type="string">
+            <column name="nama_penerima" length="20" not-null="true" />
+        </property>
+        <property name="alamatPenerima" type="string">
+            <column name="alamat_penerima" length="65535" not-null="true" />
+        </property>
+        <property name="notelpPenerima" type="string">
+            <column name="notelp_penerima" length="13" not-null="true" />
+        </property>
+        <property name="jumlahPembelian" type="int">
+            <column name="jumlah_pembelian" not-null="true" />
+        </property>
+        <property name="tglTransaksi" type="string">
+            <column name="tgl_transaksi" length="20" not-null="true" />
+        </property>
+        <property name="idSeller" type="string">
+            <column name="id_seller" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

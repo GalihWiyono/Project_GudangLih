@@ -1,0 +1,203 @@
+.slider { 
+	/*border: 10px solid #efefef;*/ 
+	position: relative; 
+	overflow: hidden; 
+	background: #efefef;
+        display: flex;
+        flex-direction: column;
+}
+ 
+.slider { 
+	margin:20px auto;
+	width: 1000px;
+	height: 300px; 
+	background:transparent;
+}
+.slider h1{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+ 
+.isi-slider div { 
+	width: 1000px;
+	height: 300px; 
+	float: left;
+}
+ 
+.isi-slider { 
+	position: absolute; 
+	width:5000px;  
+	animation-name:slider;
+	animation-duration:16s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.isi-slider:hover { 
+	animation-play-state:paused; }
+
+ 
+.isi-slider div { 
+	float: right; 
+}
+.quote1{
+ 	display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+ 	flex-direction: column;
+ 	color: white;
+ }
+.quote1 h2 ,p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	flex-direction: column;
+}
+.quote2{
+ 	display: flex;
+        justify-content: center;
+ 	flex-direction: column;
+ 	color: white;
+ }
+.quote2 h2 ,p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	flex-direction: column;
+}
+.quote3{
+ 	display: flex;
+ 	flex-direction: column;
+ 	color: white;
+ }
+.quote3 h2 ,p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	flex-direction: column;
+}
+.quote4{
+ 	display: flex;
+ 	flex-direction: column;
+
+ 	/*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('iseng/cewek.jpg');*/
+ 	/*background-size: cover;*/
+ 	color: white;
+ }
+.quote4 h2 ,p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	flex-direction: column;
+}
+.slider:after { 
+	font-size: 150px; 
+	position: absolute; 
+	z-index: 12; 
+	color: rgba(255,255,255, 0); 
+	left: 300px; top: 80px; 
+	transition: ls all ease-in-out; 
+}
+ 
+.slider:hover:after { 
+	/*color: rgba(255,255,255, 0.6);  */
+}
+ 
+@keyframes slider {     
+    0% {
+        left: 0; opacity: 0; 
+    }     
+    2% {
+        opacity: 1; 
+    }     
+    20% {
+        left: 0; opacity: 1; 
+    }     
+    21% {
+        opacity: 0; 
+    }     
+    24% {
+        opacity: 0; 
+    }     
+    25% {
+        left: -1000px; opacity: 1; 
+    }       
+    45% {
+        left: -1000px; opacity: 1; 
+    }     
+    46% {
+        opacity: 0; 
+    }     
+    48% {
+        opacity: 0; 
+    }     
+    50% {
+        left: -2000px; opacity: 1; 
+    }     
+    70% {
+        left: -2000px; opacity: 1; 
+    }     
+    72% {
+        opacity: 0; 
+    }     
+    74% {
+        opacity: 0; 
+    }    
+    75% {
+        left: -3000px; opacity: 1; 
+    }       
+    95% {
+        left: -3000px; opacity: 1; 
+    }       
+    97% { 
+        left: -3000px; opacity: 0;
+    }       
+    100% {
+        left: 0; opacity: 0; 
+    }
+}
+.bungkusan-contact{
+    background-color: white;
+    background: rgba(0,0,0,0.5)
+}
+.biodata{
+    border-style: none;
+}
+.garis{
+    border-bottom: 1px solid black;
+}
+.contactus{
+    display: flex;
+    justify-content: flex-start;
+    /*align-items: center;*/
+    flex-direction: column;
+    color: white;
+    height: 400px;
+    width: 500px;
+    /*background: black*/
+}
+.g-maps{
+    margin-top: 100px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.Container-Home{
+    margin-top: 119px;
+    position: relative;
+    height: 55vh;
+    background-color: red;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../..//Image/bg testi.jpg");
+    background-size: cover;
+}

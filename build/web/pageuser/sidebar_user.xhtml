@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>User Menu</title>
+    </h:head>
+    <h:body>
+        <ui:decorate template="templateuser.xhtml">
+            <ui:define name="sidebar">
+                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                        Your Product
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <h:form>
+                                <h:commandLink class="nav-link" action="historytransaksi.xhtml" value="History Transaction"></h:commandLink>
+                                <h:commandLink class="nav-link" action="listproductuser.xhtml" value="List Product"></h:commandLink>
+                            </h:form>
+                        </nav>
+                    </div>
+                </nav>
+            </ui:define>
+        </ui:decorate>
+    </h:body>
+</html>
+

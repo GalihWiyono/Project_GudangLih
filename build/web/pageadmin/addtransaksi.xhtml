@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Add Transaksi</title>
+        <link href="resources/css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    </h:head>
+    <h:body>
+        <ui:decorate template="sidebar_admin.xhtml">
+            <ui:define name="body">
+                <div id="layoutAuthentication">
+            <div id="layoutAuthentication_content">
+                <main>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5">
+                                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Add transaction</h3></div>
+                                    <div class="card-body">
+                                        <h:form>
+                                            <div class="form-group">
+                                                <h:outputLabel class="small mb-1" value="ID Transaksi"></h:outputLabel>
+                                                <h:inputText class="form-control py-4" value="#{tblTransaksi.idTransaksi}" maxlength="6"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <h:outputLabel class="small mb-1" value="id Barang"></h:outputLabel>
+                                                <h:inputText class="form-control py-4" value="#{tblTransaksi.idBarang}" maxlength="6"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <h:outputLabel class="small mb-1" value="nama Barang"></h:outputLabel>
+                                                <h:inputText class="form-control py-4" value="#{tblTransaksi.namaBarang}"/>
+                                            </div>
+                                            <div class="form-group">
+                                               <h:outputLabel class="small mb-1" value="nama penerima"></h:outputLabel>
+                                               <h:inputText class="form-control py-4" value="#{tblTransaksi.namaPenerima}"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <h:outputLabel class="small mb-1" value="alamat penerima"></h:outputLabel>
+                                                <h:inputText class="form-control py-4" value="#{tblTransaksi.alamatPenerima}"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <h:outputLabel class="small mb-1" value="no telp"></h:outputLabel>
+                                                <h:inputText class="form-control py-4" value="#{tblTransaksi.notelpPenerima}"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <h:outputLabel class="small mb-1" value="jumlah"></h:outputLabel>
+                                                <h:inputText class="form-control py-4" value="#{tblTransaksi.jumlahPembelian}"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <h:outputLabel class="small mb-1" value="tanggal transaksi"></h:outputLabel>
+                                                <h:inputText class="form-control py-4" value="#{tblTransaksi.date}"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <h:outputLabel class="small mb-1" value="id seller"></h:outputLabel>
+                                                <h:inputText class="form-control py-4" value="#{tblTransaksi.idSeller}"/>
+                                            </div>
+                                            <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                                                <h:commandButton class="btn btn-success text-center m-auto" value="Tambah Transaksi" action="#{tblTransaksi.addtransaksi()}"/>
+                                                <h:commandButton class="btn btn-success text-center m-auto" value="reset" action="#{tblTransaksi.reset()}"/>
+                                            </div>
+                                        </h:form>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+            </ui:define>
+        </ui:decorate>
+    </h:body>
+</html>
+

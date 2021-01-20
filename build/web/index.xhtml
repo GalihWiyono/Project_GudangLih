@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>GudanginLah</title>
+    </h:head>
+    <h:body>
+        <ui:decorate template="navbar.xhtml">
+            <ui:define name="isi">
+                <div class="contents">
+                <div class="tulisan">
+                    <h4 class="text">Help your bussines</h4>
+                    <h4 class="text">with</h4>
+                    <h1 class="text">GudanginLah</h1>
+                    <h4 class="text">an Easy Way to Manage your product</h4>
+                </div>
+                <div class="buton">
+                    <h:form>
+                        <h:commandLink action="register.xhtml" value="Join Us" class="join"/>
+                    </h:form>
+                </div>
+            </div>
+                <footer>
+                <div class="tempatfooter">
+                    <div >Copyright &copy; Your Website 2020</div>
+                        <div>
+                            <a href="#">Privacy Policy</a>
+                            &middot;
+                            <a href="#">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </footer>
+            </ui:define>
+        </ui:decorate>
+    </h:body>
+</html>
+

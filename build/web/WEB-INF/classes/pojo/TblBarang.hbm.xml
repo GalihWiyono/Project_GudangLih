@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18-Oct-2020 20:19:14 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.TblBarang" table="tbl_barang" catalog="gudanginlah_v2" optimistic-lock="version">
+        <id name="idBarang" type="string">
+            <column name="id_barang" length="6" />
+            <generator class="assigned" />
+        </id>
+        <property name="namaBarang" type="string">
+            <column name="nama_barang" length="20" not-null="true" />
+        </property>
+        <property name="jenisBarang" type="string">
+            <column name="jenis_barang" length="20" not-null="true" />
+        </property>
+        <property name="jumlahBarang" type="int">
+            <column name="jumlah_barang" not-null="true" />
+        </property>
+        <property name="idSeller" type="string">
+            <column name="id_seller" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

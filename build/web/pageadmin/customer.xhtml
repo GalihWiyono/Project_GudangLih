@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <head>
+            <style>
+                ul{
+                list-style-type: none;  
+            }
+            .info{
+                background-color: #99ff99;
+                color: green;
+                border: 1px solid #99ff99;
+            }
+            </style>
+            
+        </head>
+        <title>Customer</title>
+    </h:head>
+    <h:body>
+        <ui:decorate template="sidebar_admin.xhtml">
+            <ui:define name="body">
+                <div class="container-fluid">
+                        <h1 class="mt-4">Customers</h1>
+                <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between">
+                                <div>
+                                <i class="fas fa-table mr-1"></i>
+                                Data Barang
+                                </div>
+                            </div>
+                                <div class="table-responsive">
+                                    <h:dataTable rows="#{tblBarang.seller}" class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0" value="#{tblSeller.semuaData()}" var="seller" >
+                                        <h:messages infoClass="info"/>
+                                        <h:column>
+                                            <f:facet name="header">ID</f:facet>
+                                            <h:outputText value="#{seller.idSeller}" />
+                                        </h:column>
+                                        <h:column>
+                                            <f:facet name="header">nama</f:facet>
+                                            <h:outputText value="#{seller.namaSeller}" />
+                                        </h:column> 
+                                        <h:column>
+                                            <f:facet name="header">alamat</f:facet>
+                                            <h:outputText value="#{seller.alamatSeller}" />
+                                        </h:column>
+                                        <h:column>
+                                            <f:facet name="header">no telepon</f:facet>
+                                            <h:outputText value="#{seller.noTelp}" />
+                                        </h:column>
+                                        <h:column>
+                                            <f:facet name="header">Delete</f:facet>
+                                            <h:form>
+                                                <h:commandButton class="btn btn-danger text-white" value="Delete"  action="#{tblSeller.Delete(seller.idSeller)}">
+                                                </h:commandButton>
+                                            </h:form>
+                                        </h:column>
+                                        <h:column>                                            
+                                            <f:facet name="header">Edit</f:facet>
+                                            <h:form>
+                                                <h:commandButton class="btn btn-success text-white" value="Edit" action="#{tblSeller.cariseler(seller.idSeller)}"/>
+                                            </h:form>
+                                        </h:column>
+                                    </h:dataTable>
+                                </div>
+                        </div>
+                </div>
+            </ui:define>
+        </ui:decorate>
+    </h:body>
+</html>
+

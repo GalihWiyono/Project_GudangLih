@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Admin Page</title>
+    </h:head>
+    <h:body>
+        <ui:decorate template="template.xhtml">
+            <ui:define name="sidebar">
+                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                         <div class="sb-nav-link-icon"><i class="fas fa-database"></i></div>
+                        Data GudanginLah
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <h:form>
+                                <h:commandLink class="nav-link" action="transaksi.xhtml" value="Total Transaksi"></h:commandLink>
+                                <h:commandLink class="nav-link" action="customer.xhtml" value="Customers" ></h:commandLink>
+                                <h:commandLink class="nav-link" action="listproduct.xhtml" value="List Product"></h:commandLink>
+                            </h:form>
+                        </nav>
+                    </div>
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#coba" aria-expanded="false" aria-controls="pagesCollapseError">
+                         <div class="sb-nav-link-icon"><i class="fas fa-folder-plus"></i></div>
+                        Add Product
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="coba" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <h:form>
+                                <h:commandLink class="nav-link" action="addproduct.xhtml" value="Tambah Product"></h:commandLink>
+                            </h:form>
+                        </nav>
+                    </div>
+                </nav>
+            </ui:define>
+        </ui:decorate>
+    </h:body>
+</html>
+

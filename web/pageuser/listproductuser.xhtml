@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>User product</title>
+    </h:head>
+    <h:body>
+        <ui:decorate template="sidebar_user.xhtml">
+            <ui:define name="body">
+                <div class="container-fluid">
+                        <h1 class="mt-4">List Product</h1>
+                <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table mr-1"></i>
+                                Data Barang
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <h:dataTable class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0" value="#{tblBarang.caribrgSeller()}" var="p" rows="#{tblSeller.total_barang}">
+                                        <h:column>
+                                            <f:facet name="header">ID Barang</f:facet>
+                                            <h:outputText value="#{p.idBarang}" />
+                                        </h:column> 
+                                        <h:column>
+                                            <f:facet name="header">Nama Barang</f:facet>
+                                            <h:outputText value="#{p.namaBarang}" />
+                                        </h:column>
+                                        <h:column>
+                                            <f:facet name="header">Jenis Barang</f:facet>
+                                            <h:outputText value="#{p.jenisBarang}" />
+                                        </h:column>
+                                        <h:column>
+                                            <f:facet name="header">Jumlah Barang</f:facet>
+                                            <h:outputText value="#{p.jumlahBarang}" />
+                                        </h:column>
+                                    </h:dataTable>
+                                </div>
+                            </div>
+                        </div>
+                <div>
+                </div>
+                </div>
+            </ui:define>
+        </ui:decorate>
+    </h:body>
+</html>
+

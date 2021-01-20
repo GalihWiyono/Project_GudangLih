@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.containers{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../..//Image/bg index.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+.tempat{
+    
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    background-image: url("../..//Image/logo putih.png");
+    background-size: cover;
+}
+.logo1{
+    width: 80px;
+    height: 80px;
+    background-image: url("../..//Image/Gudangin.png");
+    background-size: cover;
+    margin: 0 auto;
+}
+.navbars{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    background-color: transparent;
+    width: 100%;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+.link:hover{
+    color: red;
+    text-decoration: none;
+}
+.login{
+    text-decoration: none;
+    color: white;
+}
+.contents{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.tulisan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    font-size: 22px;
+}
+.text{
+    color: white;
+    margin: 3px 0;
+}
+.buton{
+    margin-top: 20px;
+}
+.join{
+    padding: 10px 30px 10px 30px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+}
+.join:hover{
+    padding: 10px 50px 10px 50px;
+    transition: 0.1s;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: 1px solid green;
+}
+.tmpbackground{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../..//Image/bg index.jpg");
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: 250px;
+}
+.tempatfooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: white;
+}
+.tempatfooter a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+.tempat{
+    margin: auto;
+    width: 25%;
+}
+.cmbtn{
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+.reg{
+    width: 100%;
+    padding: 10px;
+    border: none;
+}

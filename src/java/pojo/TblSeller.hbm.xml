@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 18-Oct-2020 20:19:14 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.TblSeller" table="tbl_seller" catalog="gudanginlah_v2" optimistic-lock="version">
+        <id name="idSeller" type="string">
+            <column name="id_seller" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="string">
+            <column name="password" length="20" not-null="true" />
+        </property>
+        <property name="namaSeller" type="string">
+            <column name="nama_seller" length="20" not-null="true" />
+        </property>
+        <property name="alamatSeller" type="string">
+            <column name="alamat_seller" length="65535" not-null="true" />
+        </property>
+        <property name="noTelp" type="string">
+            <column name="no_telp" length="13" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
