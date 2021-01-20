@@ -11,7 +11,7 @@
     <description>Builds, tests, and runs the project ProjectGudanginLah.</description>
     <import file="nbproject/build-impl.xml"/>
     <target name="default">
-		<echo>Hello World - welcome</echo>
+		<echo>Deployment Complete</echo>
 	</target>
     <!--
 
