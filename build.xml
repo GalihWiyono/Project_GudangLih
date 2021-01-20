@@ -10,6 +10,9 @@
 <project name="ProjectGudanginLah" default="default" basedir=".">
     <description>Builds, tests, and runs the project ProjectGudanginLah.</description>
     <import file="nbproject/build-impl.xml"/>
+    <target name="default">
+		<echo>Hello World - welcome</echo>
+	</target>
     <!--
 
     There exist several targets which are by default empty and which can be 
